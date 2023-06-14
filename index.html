@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css"></style>
+    <title>Merge PDF</title>  
+</head>
+
+<body>
+    <style> 
+button:active {
+    scale: 1;
+}
+    
+h1{
+    color:gray;
+    text-align: center;
+    padding: 50px;
+    height: 100px;
+    font-size: xx-large;
+}
+
+h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    transform: translate(-50%, -50%);
+    background: #33F0CE(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px #33F0CE(0,0,0, .6);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: smaller;
+    padding: 100px;
+    height: 300px;
+    background-color: #33F0CE;
+    border-radius: 30px;
+    border-style:dotted;
+    border-color: grey;
+}
+input[type="file"]{
+    color: black;
+    font-size: larger;
+    
+}
+input[type="submit"]{
+    font-size: larger;
+
+}
+.customfile{
+    border: 3px solid black;
+    border-radius: 50px;
+    padding: 0%;
+
+}
+.customfile::-webkit-file-upload-button{
+    background-image: linear-gradient(burlywood,white);
+    color:black;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.submit{
+    background-image: linear-gradient(burlywood,white);
+    color:black;
+    padding: 8px 16px;
+    border: 3px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+</style>
+
+    <h1>Merge PDF Files<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaUlEQVR4nO3ZUUoDMRAG4DmABxHRlx2vai9ktS/N4oNnEFbQGbyAktLSgLa7M0kmic3AvLQkzbf5WUIK0KtXL1EN5J6Qx2+LHsitIVehEeLQHXLZO0JuheSmtiHkHvzn9x8vtzkwlpB3/Nze7b772l4jjW9zi6oTwssx9UN4GaYNCM9j2oHweUxbED6NaQ/CO8zkX8nhq1kzR3kI/8aI5gjGlofw3wvS7GbyUzMmyPI8ZHy+mV6vYk4LUBTiF03jZo/ZxBx5IPppansfJ78Tfkdi54NykPg4YVFIwjhhMUjiOGE5SNo4oTkkU5zQFJIxTmgLyRcnNIEI4jS7iKBsIcI4mUAGcmsNwo9dGqfw97QRhFwlWVA4RouBXCVZSDhGi4FsEMXTlN6bYdUQJQaqhCgwUC1EiIGqISy/nq0XwrLr2aKQRU3HV7P/a6NdCB/Ob25VbbRSNHTIpezIID01x/VjNkivXv+0fgC5v1WeG0nDywAAAABJRU5ErkJggg==">
+    
+    </h1>
+    <div class="icons8-merge-files"></div>
+</body>
+
+<h2>
+<form method="post" enctype="multipart/form-data"> 
+    <input type="file" name="pdf_files" accept=".pdf" multiple class="customfile"> 
+    <input type="submit" class="submit" value="Merge PDF">
+</form>
+</h2>
+</html>
